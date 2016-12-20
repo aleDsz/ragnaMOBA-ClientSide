@@ -1,0 +1,97 @@
+EntryQueueList = {
+  [1] = {
+    BattleFieldName = "\198\188\191\161\182\243 \199\249\176\238",
+    DisplayBattleFieldName = "\198\188\191\161\182\243 \199\249\176\238",
+    AllianceNum = 6,
+    EnemyNum = 6,
+    PrivateApply = 1,
+    PartyApply = 1,
+    GuildApply = 1,
+    JobGroup = 4,
+    EnterCondType = 2,
+    EnterCondValue1 = 80,
+    EnterCondValue2 = 0,
+    RewardWin = "\191\235\184\205\200\214\192\229 3\176\179",
+    RewardDraw = "\191\235\184\205\200\214\192\229 1\176\179",
+    RewardLose = "\191\235\184\205\200\214\192\229 1\176\179",
+    VictoryCond = "\187\243\180\235 \193\248\191\181\192\199 \192\250\192\229\176\237 \198\196\177\171",
+    MiniMapFile = "bat_a01.bmp"
+  },
+  [2] = {
+    BattleFieldName = "\199\195\182\243\186\241\191\236\189\186",
+    DisplayBattleFieldName = "\199\195\182\243\186\241\191\236\189\186",
+    AllianceNum = 6,
+    EnemyNum = 6,
+    PrivateApply = 1,
+    PartyApply = 1,
+    GuildApply = 1,
+    JobGroup = 4,
+    EnterCondType = 2,
+    EnterCondValue1 = 80,
+    EnterCondValue2 = 0,
+    RewardWin = "\198\175\176\248\200\214\192\229 9\176\179",
+    RewardDraw = "\198\175\176\248\200\214\192\229 3\176\179",
+    RewardLose = "\198\175\176\248\200\214\192\229 3\176\179",
+    VictoryCond = "\187\243\180\235 \193\248\191\181\192\199 \197\169\184\174\189\186\197\187 \198\196\177\171",
+    MiniMapFile = "bat_b01.bmp"
+  },
+  [3] = {
+    BattleFieldName = "KVM (Lv80\192\204\187\243)",
+    DisplayBattleFieldName = "KVM (Lv80\192\204\187\243)",
+    AllianceNum = 5,
+    EnemyNum = 5,
+    PrivateApply = 1,
+    PartyApply = 1,
+    GuildApply = 1,
+    JobGroup = 0,
+    EnterCondType = 2,
+    EnterCondValue1 = 80,
+    EnterCondValue2 = 0,
+    RewardWin = "KVM\198\247\192\206\198\174 5",
+    RewardDraw = "KVM\198\247\192\206\198\174 1",
+    RewardLose = "KVM\198\247\192\206\198\174 1",
+    VictoryCond = "\187\243\180\235 \193\248\191\181 \192\252\184\234",
+    MiniMapFile = "bat_c01.bmp"
+  },
+  [4] = {
+    BattleFieldName = "KVM (Lv60~79)",
+    DisplayBattleFieldName = "KVM (Lv60~79)",
+    AllianceNum = 5,
+    EnemyNum = 5,
+    PrivateApply = 1,
+    PartyApply = 1,
+    GuildApply = 1,
+    JobGroup = 0,
+    EnterCondType = 3,
+    EnterCondValue1 = 60,
+    EnterCondValue2 = 79,
+    RewardWin = "KVM\198\247\192\206\198\174 2",
+    RewardDraw = "KVM\198\247\192\206\198\174 1",
+    RewardLose = "KVM\198\247\192\206\198\174 0",
+    VictoryCond = "\187\243\180\235 \193\248\191\181 \192\252\184\234",
+    MiniMapFile = "bat_c01.bmp"
+  },
+  [5] = {
+    BattleFieldName = "KVM (Lv59\192\204\199\207)",
+    DisplayBattleFieldName = "KVM (Lv59\192\204\199\207)",
+    AllianceNum = 5,
+    EnemyNum = 5,
+    PrivateApply = 1,
+    PartyApply = 1,
+    GuildApply = 1,
+    JobGroup = 0,
+    EnterCondType = 1,
+    EnterCondValue1 = 59,
+    EnterCondValue2 = 0,
+    RewardWin = "KVM\198\247\192\206\198\174 1",
+    RewardDraw = "KVM\198\247\192\206\198\174 0",
+    RewardLose = "KVM\198\247\192\206\198\174 0",
+    VictoryCond = "\187\243\180\235 \193\248\191\181 \192\252\184\234",
+    MiniMapFile = "bat_c01.bmp"
+  }
+}
+function ReadEntryQueueList()
+  for id, table in pairs(EntryQueueList) do
+    AddEntryQueue(id, table.BattleFieldName, table.DisplayBattleFieldName, table.AllianceNum, table.EnemyNum, table.PrivateApply, table.PartyApply, table.GuildApply, table.JobGroup, table.EnterCondType, table.EnterCondValue1, table.EnterCondValue2, table.RewardWin, table.RewardDraw, table.RewardLose, table.VictoryCond, table.MiniMapFile)
+  end
+end

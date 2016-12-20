@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="euc-kr" ?>
+<clientinfo>
+	<servicetype>brazil</servicetype>
+	<servertype>primary</servertype>
+	<extendedslot />
+	<passwordencrypt />
+	<passwordencrypt2 />
+	<connection>
+		<display>^005555~ ragnaMOBA ~^000000</display>
+		<desc>^005555~ ragnaMOBA ~^000000</desc>
+		<balloon>^005555~ ragnaMOBA ~^000000</balloon>
+		<address>127.0.0.1</address>
+		<port>6900</port>
+		<version>47</version>
+		<lang>9</lang>
+		<registrationweb></registrationweb>
+		<aid>
+			<admin>2000001</admin>
+		</aid>
+		<loading>
+			<image>loading00.jpg</image>
+		</loading>
+	</connection>
+</clientinfo>
