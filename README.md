@@ -9,7 +9,7 @@ ragnaMOBA-ClientSide
 
 #### Introdução
 
-O ragnaMOBA-ClientSide é a aplicação cliente para o ragnaMOBA [[link](http://github.com/aleDsz/ragnaMOBA)]
+O ragnaMOBA-ClientSide contém os arquivos client side para que seja possível executar o ragnaMOBA [[link](http://github.com/aleDsz/ragnaMOBA)]
 
 Qualquer bug encontrado deve ser postado em: https://github.com/aleDsz/ragnaMOBA-ClientSide/issues
 
